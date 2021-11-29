@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<ProjectGuid>{83c285a1-c982-4616-a1ba-03d71c944625}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="ClosedXML.Report" Version="0.2.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.21" />
+  </ItemGroup>
+
+  <ItemGroup>        
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Interfaces\TCO.SNT.Infrastructure.Interfaces.csproj" />        
+    <ProjectReference Include="..\TCO.SNT.Resources\TCO.SNT.Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ReportBuilders\Templates\Balance-Report.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ReportBuilders\Templates\Snt-Report.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ReportBuilders\Templates\UForm-Report.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<ProjectGuid>{83c285a1-c982-4616-a1ba-03d71c944634}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentDateTime" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Framework.Domain\TCO.Finportal.Framework.Domain.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Common\TCO.SNT.Common.csproj" />
+  </ItemGroup>
+
+</Project>

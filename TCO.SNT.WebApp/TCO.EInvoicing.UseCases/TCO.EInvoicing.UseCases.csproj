@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.EInvoicing.DataAccess.Interfaces\TCO.EInvoicing.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Einvoicing.Jde.Interfaces\TCO.Einvoicing.Jde.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.Contract\TCO.Finportal.Shared.Contract.csproj" />
+    <ProjectReference Include="..\TCO.EInvoicing.Entities\TCO.EInvoicing.Entities.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Framework.UseCases\TCO.Finportal.Framework.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.SNT.EsfApi.Interfaces\TCO.SNT.EsfApi.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Interfaces\TCO.SNT.Infrastructure.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

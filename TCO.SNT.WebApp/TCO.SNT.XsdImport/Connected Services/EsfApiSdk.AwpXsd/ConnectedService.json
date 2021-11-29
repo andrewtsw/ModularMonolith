@@ -1,0 +1,16 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "../../../../ESF WSDL/WS/AwpXsdService.wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, EsfApiSdk.AwpXsd"
+    ],
+    "targetFramework": "netcoreapp3.1",
+    "typeReuseMode": "None"
+  }
+}

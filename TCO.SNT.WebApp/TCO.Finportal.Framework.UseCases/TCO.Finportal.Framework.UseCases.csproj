@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Shared.DataAccess.Interfaces\TCO.Finportal.Shared.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Common\TCO.SNT.Common.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Framework.Domain\TCO.Finportal.Framework.Domain.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Common\TCO.SNT.Common.csproj" />
+  </ItemGroup>
+
+</Project>

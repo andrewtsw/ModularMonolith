@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.21" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="3.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.EInvoicing.DataAccess.Interfaces\TCO.EInvoicing.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Framework.DataAccess\TCO.Finportal.Framework.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

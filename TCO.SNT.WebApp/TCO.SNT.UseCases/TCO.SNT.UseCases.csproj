@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<ProjectGuid>{83c285a1-c982-4616-a1ba-03d71c944622}</ProjectGuid>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />    
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.Email.Interfaces\TCO.Finportal.Infrastructure.Email.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Framework.UseCases\TCO.Finportal.Framework.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.KeyVault.Interfaces\TCO.Finportal.Infrastructure.KeyVault.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.MsGraph.Interfaces\TCO.Finportal.Infrastructure.MsGraph.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.Contract\TCO.Finportal.Shared.Contract.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Snt.Infrastructure.BackgroungJobs.Interfaces\TCO.Finportal.Snt.Infrastructure.BackgroungJobs.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Common\TCO.SNT.Common.csproj" />
+    <ProjectReference Include="..\TCO.SNT.DataAccess.Interfaces\TCO.SNT.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Entities\TCO.SNT.Entities.csproj" />
+    <ProjectReference Include="..\TCO.SNT.EsfApi.Interfaces\TCO.SNT.EsfApi.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.ExchangeRates.Interfaces\TCO.SNT.ExchangeRates.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Interfaces\TCO.SNT.Infrastructure.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Resources\TCO.SNT.Resources.csproj" />
+    <ProjectReference Include="..\TCO.SNT.VStore.Interfaces\TCO.SNT.VStore.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Resources\TCO.SNT.Resources.csproj" />
+  </ItemGroup>
+
+</Project>

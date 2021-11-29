@@ -1,0 +1,19 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.40203.910",
+  "ExtendedData": {
+    "inputs": [
+      "../../../../ESF WSDL/WS/SntWebService 2021-07-06.wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "messageContract": true,
+    "namespaceMappings": [
+      "*, EsfApiSdk.Snt"
+    ],
+    "targetFramework": "netcoreapp3.1",
+    "typeReuseMode": "None"
+  }
+}

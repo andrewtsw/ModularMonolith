@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Framework.UseCases\TCO.Finportal.Framework.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.KeyVault.Interfaces\TCO.Finportal.Infrastructure.KeyVault.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.MsGraph.Interfaces\TCO.Finportal.Infrastructure.MsGraph.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.ApplicationServices\TCO.Finportal.Shared.ApplicationServices.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.DataAccess.Interfaces\TCO.Finportal.Shared.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.EsfApi.Interfaces\TCO.SNT.EsfApi.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Interfaces\TCO.SNT.Infrastructure.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.VStore.Interfaces\TCO.SNT.VStore.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

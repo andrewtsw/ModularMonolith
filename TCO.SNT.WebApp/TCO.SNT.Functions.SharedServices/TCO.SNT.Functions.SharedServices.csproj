@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+	<ProjectGuid>{83c285a1-c982-4616-a1ba-03d71c944627}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.Email.Smtp\TCO.Finportal.Infrastructure.Email.Smtp.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.KeyVault.Azure\TCO.Finportal.Infrastructure.KeyVault.Azure.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.ContractImplementation\TCO.Finportal.Shared.ContractImplementation.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.DataAccess.SqlServer\TCO.Finportal.Shared.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.UseCases\TCO.Finportal.Shared.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Common\TCO.SNT.Common.csproj" />
+    <ProjectReference Include="..\TCO.SNT.DataAccess.SqlServer\TCO.SNT.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Entities\TCO.SNT.Entities.csproj" />
+    <ProjectReference Include="..\TCO.SNT.EsfApi.Implementation\TCO.SNT.EsfApi.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.SNT.ExchangeRates.NationalBankKz\TCO.SNT.ExchangeRates.NationalBankKz.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Implementation\TCO.SNT.Infrastructure.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.SNT.UseCases\TCO.SNT.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.SNT.VStore.Implementation\TCO.SNT.VStore.Implementation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>    
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TCO.Finportal.Functions.EInvoicing": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "AZURE_CLIENT_SECRET": "+OT3UIvazixhF7UDFJ7hYc2qb0jISoT2bljS8wDDLrg=",
+        "AZURE_CLIENT_ID": "7d94817b-e9c1-48e6-a007-7065b4db87b6",
+        "AZURE_TENANT_ID": "fd799da1-bfc1-4234-a91c-72b3a1cb9e26"
+      }
+    }
+  }
+}

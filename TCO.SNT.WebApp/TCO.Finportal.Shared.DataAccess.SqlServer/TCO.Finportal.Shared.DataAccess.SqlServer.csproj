@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Framework.DataAccess\TCO.Finportal.Framework.DataAccess.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.DataAccess.Interfaces\TCO.Finportal.Shared.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.Entities\TCO.Finportal.Shared.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

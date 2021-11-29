@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Core" Version="1.7.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Snt.Infrastructure.BackgroungJobs.Interfaces\TCO.Finportal.Snt.Infrastructure.BackgroungJobs.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Interfaces\TCO.SNT.Infrastructure.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.SNT.UseCases\TCO.SNT.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>

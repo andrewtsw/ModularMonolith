@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationInsightsResourceId>/subscriptions/baa67dbf-45d0-4d84-b662-527186361068/resourceGroups/tcosnt-t332-20200910/providers/microsoft.insights/components/tcosnt-dev-core-cvx</ApplicationInsightsResourceId>
+    <UserSecretsId>645f5be1-fa14-4e2c-99af-d1992e50c2e6</UserSecretsId>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+	<ProjectGuid>{83c285a1-c982-4616-a1ba-03d71c94462c}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.0.2" />
+    <PackageReference Include="Azure.Identity" Version="1.2.3" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.1.0" />
+    <PackageReference Include="Chevron.Identity.AspNet.Client" Version="2.0.0" />
+    <PackageReference Include="Chevron.Net.Http" Version="2.0.0" />
+    <PackageReference Include="Extensions.Hosting.AsyncInitialization" Version="1.0.0" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.23" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.23" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.23" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+    <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.21" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.EInvoicing.DataAccess.SqlServer\TCO.EInvoicing.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\TCO.Einvoicing.Jde.Implementation\TCO.Einvoicing.Jde.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.EInvoicing.UseCases\TCO.EInvoicing.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.EInvoicing.Controllers\TCO.Finportal.EInvoicing.Controllers.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.Email.Smtp\TCO.Finportal.Infrastructure.Email.Smtp.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.KeyVault.Azure\TCO.Finportal.Infrastructure.KeyVault.Azure.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.MsGraph.Sdk\TCO.Finportal.Infrastructure.MsGraph.Sdk.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.ContractImplementation\TCO.Finportal.Shared.ContractImplementation.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.Controllers\TCO.Finportal.Shared.Controllers.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.DataAccess.SqlServer\TCO.Finportal.Shared.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Snt.Infrastructure.BackgroungJobs.Hangfire\TCO.Finportal.Snt.Infrastructure.BackgroungJobs.Hangfire.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Common\TCO.SNT.Common.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Controllers\TCO.SNT.Controllers.csproj" />
+    <ProjectReference Include="..\TCO.SNT.DataAccess.SqlServer\TCO.SNT.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\TCO.SNT.EsfApi.Implementation\TCO.SNT.EsfApi.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.SNT.ExchangeRates.NationalBankKz\TCO.SNT.ExchangeRates.NationalBankKz.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Implementation\TCO.SNT.Infrastructure.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.SNT.ContractImplementation\TCO.SNT.ContractImplementation.csproj" />
+    <ProjectReference Include="..\TCO.SNT.UseCases\TCO.SNT.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.SNT.VStore.Implementation\TCO.SNT.VStore.Implementation.csproj" />
+  </ItemGroup>
+
+
+</Project>

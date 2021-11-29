@@ -1,0 +1,20 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using TCO.EInvoicing.Entities;
+
+namespace TCO.EInvoicing.DataAccess.SqlServer.Configurations.EsfInvoiceConfiguration
+{
+    public class InvoiceProductSetConfiguration : IEntityTypeConfiguration<InvoiceProductSet>
+    {
+        public void Configure(EntityTypeBuilder<InvoiceProductSet> builder)
+        {
+            builder.HasKey(x => x.InvoiceId);
+
+            builder
+                .HasOne(x => x.Invoice)
+                .WithOne(i => i.ProductSet)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.21" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.EInvoicing.DataAccess.SqlServer\TCO.EInvoicing.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\TCO.Einvoicing.Jde.Implementation\TCO.Einvoicing.Jde.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.EInvoicing.UseCases\TCO.EInvoicing.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.KeyVault.Azure\TCO.Finportal.Infrastructure.KeyVault.Azure.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.ContractImplementation\TCO.Finportal.Shared.ContractImplementation.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.DataAccess.SqlServer\TCO.Finportal.Shared.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.UseCases\TCO.Finportal.Shared.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.SNT.EsfApi.Implementation\TCO.SNT.EsfApi.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Implementation\TCO.SNT.Infrastructure.Implementation.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Interfaces\TCO.SNT.Infrastructure.Interfaces.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

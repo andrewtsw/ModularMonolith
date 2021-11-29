@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCO.Finportal.Infrastructure.KeyVault.Interfaces\TCO.Finportal.Infrastructure.KeyVault.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.ApplicationServices\TCO.Finportal.Shared.ApplicationServices.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.Contract\TCO.Finportal.Shared.Contract.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.DataAccess.Interfaces\TCO.Finportal.Shared.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\TCO.Finportal.Shared.UseCases\TCO.Finportal.Shared.UseCases.csproj" />
+    <ProjectReference Include="..\TCO.SNT.EsfIntegration.Shared\TCO.SNT.EsfIntegration.Shared.csproj" />
+    <ProjectReference Include="..\TCO.SNT.Infrastructure.Interfaces\TCO.SNT.Infrastructure.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
